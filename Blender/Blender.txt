@@ -223,6 +223,17 @@ add-vector（法线）-bump（凹凸）
 将Sprinkle Density与distribute points onface 的density max链接
 
 
+随机颜色教程：糖针形状大小、颜色各异
+88、边缘不锋利的问题：通过表面边缘修改器实现
+点击糖针对象，   add-modifier-subdivision surface    或者ctrl+1实现   细分等级1   渲染1
+89、细分效果，造成变尖了，加入一个环切，进入编辑模式-ctrl+R，环切
+90、对象模式，增加一个平滑着色   shade smooth
+91、增加一些变体
+重名为为sprinkle，复制一个   快捷键shift+D
+92、进入线框模式，顶点模式，按住G，按y拖动，沿着Y轴
+制造扭曲效果：
+93、
+
 
 
 
