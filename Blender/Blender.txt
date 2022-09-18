@@ -232,7 +232,54 @@ add-vector（法线）-bump（凹凸）
 重名为为sprinkle，复制一个   快捷键shift+D
 92、进入线框模式，顶点模式，按住G，按y拖动，沿着Y轴
 制造扭曲效果：
-93、
+93、ctrl +r增加环切，点击后按G拖动，尾部选中，也按G拖动
+注意：中间的点为原点，进入编辑模式，点击A，点击G，将物体移动到中间点上
+再增加一些形状，增加环切，使用滚轮，可以增加环切数量，点击右键，点击G进行形状修改
+或者打开衰减编辑，将旋转，增加环切，按R键，拉取旋转
+
+94、我们在引用对象模式中的单一的糖针，object info 中只能添加一个，所以集合信息节点才对，将糖针移至一个集合中去
+选中糖针对象，点击M，move to collection，new collection,拖动至面板中，选择新的糖针集合，链接instance
+
+95、问题：散布满屏幕
+检查1  instance on points 上的选择实例 pick instance 选择实例被启用了，会让渲染速度快很多
+检查2   collection info  里的separate children 分离子级，就不后悔在每个点上都引用五个糖针了
+检查3 reset children 
+
+回到渲染模式，增加一些新的材质，点击sprinkle   ，material property-add  base color
+问题：想不按照形状来填充颜色，保留第一个糖针的材质颜色，修改材质名称为sprinkles,让对象共享这些材质
+或者通过选中要添加材质对象与已有材质的对象，ctrl+l   link  material，就添加上了
+
+96、进入着色标签，shading-principled BSDF,base color 只有一种不是我们想要的
+添加一个对象信息节点   A-input-object info，将随机random 添加到base color  中去，但是这是0-1之间的黑白之间的值
+通过shift +A转换器--颜色渐变
+选择上下限的颜色
+96、把颜色渐变类型改为常值，而不是线性的
+
+97、增加一些球状的物体  layout模式：
+shift+A   mash-uv sphere,记住选中collection  集合再添加，缩放变小
+shade  smooth平滑着色
+再添加一个材质，添加一个base  color的颜色
+roughness添加一些粗糙度
+移动到糖针集合中去，ctrl +A应用缩放   sacle
+每6个糖针集合就一个球球
+
+或者移除集合，手动添加球球
+
+
+
+入门动画部分
+
+
+取消平面--删除
+98、把摄像机移动到他的正前方这个角度，几种方法：
+（1）移动摄像机的位置
+（2）准确的出现在某个物体的签名，最简单的做法：小键盘的1或者点击右上角的图标，然后view-align  view --活动摄像机对齐当前视角（align active camera to view）
+或者快捷键   ctrl+alt+0
+
+99、旋转dount来定位我们的摄像机
+我们可以打包整个甜甜圈，ctrl+P
+第一步：选择糖霜，按住shift选择糖霜，然后ctrl+p用来添加父子级关系
+
 
 
 
