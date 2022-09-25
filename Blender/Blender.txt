@@ -278,7 +278,41 @@ roughness添加一些粗糙度
 
 99、旋转dount来定位我们的摄像机
 我们可以打包整个甜甜圈，ctrl+P
-第一步：选择糖霜，按住shift选择糖霜，然后ctrl+p用来添加父子级关系
+第一步：选择dount，按住shift选择糖霜icing，然后ctrl+p用来添加父子级关系
+
+100、切换相机模式  0
+快捷键N调整旋转的X轴的角度  60度，现在是宽屏模式
+调整垂直模式
+(1)修改相机的参数output properties  1080  1440
+(2)设置焦距：object data properties   
+为了明显，侧边视图，add-mesh-monkey  （shift+a ）
+提高焦距focal length:  就是物体扁平化   中庸一点  40
+viewport -display  composition guides构图辅助线--center  中心
+layout工作区模式下，有3D视图，我们可以播放动画，有时间轴模块，空格键可以播放动画
+播放单位是帧数，不是秒。
+（3）donut   的output  properties  中  frame  rate 帧率为24 fps
+制作一个十秒钟的动画，就需要240帧。这里改成手机等播放器的30帧
+101、插入关键帧---按 i 调出界面，设置什么样子的关键帧
+90帧的动画：在90帧的位置设置最后的画面--playback--sync同步--frame drop帧优化
+view-show seconds显示为秒
+
+103、旋转donut在一个第一帧开始的位置上，快捷键I插入旋转关键帧
+在210帧加一个快速的旋转，步骤：快捷键r+z进行旋转动作，做完后  快捷键i插入旋转关键帧。
+
+快捷键  home  会展示所有的内容帧数
+
+
+进入animation工作区
+104、进入animation工作区，可以看到3D视图
+左上角edit type  --graph editor曲线编辑器，会包含贝塞尔曲线的信息，显示它在哪里变慢和变快
+
+105、ctrl+中键，往右移动，放大
+ctrl+中键，往左移动，夹住
+
+106、左侧区域，可以看到关键帧在坐标轴上都加了，把X/y轴的删除   用快捷键X，或者快捷键 delete  channles
+107、下方的edit  type，动画摄像表
+106、接着  回到曲线编辑器，选中曲线的基础上，ctrl+右键可以添加关键帧
+
 
 
 
