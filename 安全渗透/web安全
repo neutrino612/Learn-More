@@ -1,0 +1,18 @@
+1. 渗透测试：通过实际的攻击进行安全测试与评估的方法就是渗透测试
+2. 渗透测试的流程
+明确目标
+信息收集
+漏洞探测
+漏洞验证
+编写报告
+信息整理与分析
+3. 远程获取cookie
+javascript  语法--
+获取  document.cookie
+设置  document.cookie="username=wuya"  从network  中验证是否写入
+修改  无方法，用设置覆盖即可
+删除  setcookie  把时间改成比当前时间早，就是失效了
+举例：控制台-console 输入 document.cookie语法即可（alert（document.cookie））
+
+重要前提：拿到cookie  一定是你的代码在对应的网站中运行，才可以拿到对应的其中的cookie；cookie是不能跨域名使用的
+所以代码要注入其中，发送给服务器

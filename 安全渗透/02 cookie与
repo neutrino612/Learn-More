@@ -1,0 +1,43 @@
+1.cookie：Cookie是保存在客户端的纯文本文件（key-value格式）
+2.cookie工作原理：首先当我们访问某个网站时，服务器首先根据浏览器的编号生成一个cookie 返回给客户端。
+客户端下次再访问时就会将自己本地的cookie 加上url访问地址一同给服务器。服务器读出来以此来辨别用户的状态
+3.Cookie 的类型
+会话Cookie：保存在内存中，由浏览器维护，浏览器关闭后消失。
+持久性Cookie：保存在硬盘里，有过期时间，用户手动清理或到了过期时间，持久性Cookie会被删除。
+
+4.session：Session是指会话控制，是保存在服务器上一种机制，当客户端访问服务器的时候，服务器会把信息以某种形式记录在服务器上，恰恰和Cookie相反。
+5.session工作原理：当客户端向服务器发出请求的时候，服务器会保存一个session，当session第一次被启用时，同时也是在客户端上形成一个cookie文件，首次使用session_start()函数，并且PHP去加载已经储存的session变量，并且通过函数去注册变量，当脚本执行完毕后，会自动保存到session库中，已方便下次使用。
+
+Session的原理
+用户第一次请求服务器时，服务器端会生成一个sessionId
+服务器端将生成的sessionId返回给客户端，通过set-cookie
+客户端收到sessionId会将它保存在Cookie中，当客户端再次访问服务端时会带上这个sessionId
+当服务端再次接收到来自客户端的请求时，会先去检查是否存在sessionId，不存在就新建一个sessionId重复1,2的流程，如果存在就去遍历服务端的session文件，找到与这个sessionId相对应的文件，文件中的键值便是sessionId，值为当前用户的一些信息
+此后的请求都会交换这个 sessionId ，进行有状态的会话
+
+6.Session的两种实现方式（也就是传递方式）
+通过Cookie实现
+通过URL重写来实现
+
+7.Session 与Cookie的区别
+Cookie的数据保存在客户端浏览器，Session保存在服务器
+服务端保存状态机制需要在客户端做标记，所以Session可能借助Cookie机制
+Cookie通常用于客户端保存用户的登录状态
+Session是可以存取任何类型的数据的，但是Cookie只能存入字符串
+Cookie存储数据大小有限制，Session没有限制
+
+8.Token的原理
+用户通过用户名和密码发送请求。
+程序验证。
+程序返回一个签名的token给客户端。
+客户端储存token，并且每次用于每次发送请求。
+服务端验证token并返回数据。
+
+9.Web测试的类型
+界面测试：导航测试、图形测试、内容测试、整体界面测试、界面控件测试
+功能测试：
+性能测试
+兼容性测试
+
+10. 通过JavaScript 操作cookie
+cookie  editor  火狐浏览器可以直接安装，没有被强掉
